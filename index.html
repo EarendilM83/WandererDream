@@ -1,0 +1,92 @@
+    
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Scene</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./speech.css">
+
+    <script src="./main.js" defer></script>   
+    <script src="./speech.js" defer></script>
+    <!-- <script src="./music.js" defer></script> -->
+
+</head>
+<body>
+     <div class="firefly" id="firefly"></div>
+     
+<!-- Stars -->
+<div class="stars" id="stars"></div>
+    
+    <!-- jeep -->
+    <div class="jeep-scene">
+        <div class="rear-tire-left"></div>
+        <div class="rear-tire-right"></div>
+        <div class="jeep">
+            <div class="roof-rack"></div>
+            <div class="rear-window"></div>
+            <div class="spare-tire">
+                <div class="wheel-spokes">
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                </div>
+            </div>
+            <div class="taillight-left"></div>
+            <div class="taillight-right"></div>
+            <div class="license-plate">KK-213-KK</div>
+            <div class="bumper"></div>
+        </div>
+        
+        <div class="couple">
+                <div class="boy">
+
+               <!-- state toggle (hidden checkbox) -->
+                <div class="talk-container">
+                    <input type="checkbox" id="talkToggle" class="talk-toggle">
+
+                        <!-- glowing “!” you click -->
+                        <label for="talkToggle" class="attn-mark" aria-label="Tap to talk">!</label>
+
+                        <!-- your existing PURE-CSS bubble (sb-ui) -->
+                        <div class="sb-ui">
+                        <!-- (keep your radios + text + controls as-is) -->
+
+                        <!-- optional: close button to hide the bubble again -->
+                        <label for="talkToggle" class="sb-close-1" aria-label="Close">×</label>
+                        </div>
+                </div>
+                        
+
+
+                <div class="boy-head"></div>
+                <div class="boy-body"></div>
+                <div class="boy-arm"></div>
+                <div class="boy-hand"></div>
+            </div>
+            <div class="girl">
+                <div class="girl-hair"></div>
+                <div class="girl-body"></div>
+                <div class="girl-arm"></div>
+            </div>
+        </div>
+    </div>
+    <div class="moon"></div>
+  <canvas id="starCanvas"></canvas>
+    <div class="grass"></div>
+
+
+    <div class="scene">
+        <!-- Vector mountains (SVG) -->
+        <div class="mountains" aria-hidden="true">
+            <img src="assets/SVG/background-refined.svg" alt="" />
+        </div>
+    </div>
+    <audio id="bgm" src="assets/sound.mp3" loop preload="auto" playsinline></audio>
+
+</body>
+</html>
